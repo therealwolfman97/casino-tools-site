@@ -3,184 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Tools Pro | Advanced Gambling Analytics</title>
+    <title>Casino Tools Pro | The Ultimate Gambling Analytics Toolkit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #050810; color: #f8fafc; scroll-behavior: smooth; }
+        body { background-color: #050810; color: #f8fafc; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .pricing-card { transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.1); }
-        .pricing-card:hover { transform: translateY(-10px); border-color: #38bdf8; box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.3); }
+        .feature-card { border: 1px solid rgba(255, 255, 255, 0.03); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: #38bdf8; background: rgba(56, 189, 248, 0.05); transform: translateY(-2px); }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
     </style>
 </head>
-<body class="selection:bg-sky-500/30">
+<body>
 
-    <nav class="fixed w-full z-50 glass border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-sky-500 rounded flex items-center justify-center">
-                    <i data-lucide="activity" class="text-white w-5 h-5"></i>
-                </div>
-                <span class="text-xl font-bold tracking-tighter uppercase">Casino Tools <span class="text-sky-400">Pro</span></span>
-            </div>
-            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-400">
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#modules" class="hover:text-white transition">Modules</a>
-                <a href="#pricing" class="hover:text-white transition">Pricing</a>
-                <a href="#contact" class="hover:text-white transition">Contact</a>
-            </div>
-            <a href="YOUR_APK_LINK_HERE" class="bg-sky-500 hover:bg-sky-400 text-white px-5 py-2 rounded-lg text-sm font-bold transition">Download Demo</a>
+    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-white/5">
+        <span class="font-bold tracking-tighter text-xl uppercase">Casino Tools <span class="text-sky-400">Pro</span></span>
+        <div class="hidden md:flex gap-6 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="#about" class="hover:text-white">Home</a>
+            <a href="#features" class="hover:text-white">Features</a>
+            <a href="#pricing" class="hover:text-white">Pricing</a>
         </div>
+        <a href="YOUR_APK_LINK_HERE" class="bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg text-sm font-bold transition">Get Demo APK</a>
     </nav>
 
-    <header id="about" class="pt-40 pb-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-bold uppercase tracking-widest">
-                v2.0 Private Release
-            </div>
-            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">Elite Analytics for the <br><span class="gradient-text">Modern Gambler</span></h1>
-            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-                An all-in-one Android toolkit combining casino strategy testing, sports-betting math, and genetic evolution engines. Build, test, and validate your edge with precision.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#pricing" class="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-slate-200 transition">View Pricing Plans</a>
-                <a href="YOUR_APK_LINK_HERE" class="px-8 py-4 glass font-bold rounded-xl hover:bg-white/10 transition flex items-center gap-2">
-                    <i data-lucide="download" class="w-5 h-5"></i> Download APK Demo
-                </a>
-            </div>
+    <section id="about" class="pt-40 pb-20 px-6 max-w-6xl mx-auto text-center">
+        <h1 class="text-6xl md:text-8xl font-black mb-6 italic tracking-tighter text-white uppercase">Data Driven <br><span class="text-sky-400">Dominance</span></h1>
+        <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">The all-in-one Android toolkit for casino strategy testing, sports math, and genetic discovery engines.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="YOUR_APK_LINK_HERE" class="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-slate-200 transition">Download Demo</a>
+            <a href="#features" class="px-8 py-4 glass border-white/10 font-bold rounded-xl hover:bg-white/5 transition">View All 20+ Modules</a>
         </div>
-    </header>
+    </section>
 
-    <section id="modules" class="py-24 px-6 bg-slate-900/20">
+    <section id="features" class="py-24 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-center">Engineered for <span class="text-sky-400">Performance</span></h2>
+            <h2 class="text-3xl font-black mb-16 text-center italic uppercase tracking-widest"><span class="text-sky-400">Full Module</span> Walkthrough</h2>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center mb-32">
-                <div>
-                    <div class="w-12 h-12 bg-sky-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="binary" class="text-sky-400"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold mb-4 italic">Strategy Discovery Engine</h3>
-                    <p class="text-slate-400 mb-6">Discover durable systems across Dice, Limbo, Keno, and Mines. Our evolution engines mutate and select the best-performing systems across thousands of generations.</p>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-sky-500 w-4 h-4"></i> Genetic-style Evolution Engines</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-sky-500 w-4 h-4"></i> Monte Carlo Session Validation</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-sky-500 w-4 h-4"></i> Risk/Reward Optimization</li>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-sky-400"><i data-lucide="folder-kanban"></i><h3 class="font-bold uppercase italic">Strategy Library</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Centralized Strategy Vault</li>
+                        <li>• Quick-Launch Sim/Calc Actions</li>
+                        <li>• Metadata & Rating Storage</li>
                     </ul>
                 </div>
-                <div class="glass p-4 rounded-3xl border-white/10 shadow-2xl">
-                    <div class="bg-slate-800 aspect-[9/16] rounded-2xl flex items-center justify-center text-slate-500 italic">
-                        [Placeholder: Evolution Lab Screenshot]
-                    </div>
-                </div>
-            </div>
 
-            <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
-                <div class="order-2 md:order-1">
-                    <div class="glass p-4 rounded-3xl border-white/10 shadow-2xl">
-                        <div class="bg-slate-800 aspect-[9/16] rounded-2xl flex items-center justify-center text-slate-500 italic">
-                            [Placeholder: Sports Lab Screenshot]
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 md:order-2">
-                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="trophy" class="text-purple-400"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold mb-4 italic">Sports Betting Lab</h3>
-                    <p class="text-slate-400 mb-6">Master your bankroll with disciplined sports-betting math. Convert odds to edge and calculate exact stake sizes for maximum growth.</p>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-purple-500 w-4 h-4"></i> Full/Half/Quarter Kelly Calculator</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-purple-500 w-4 h-4"></i> Arbitrage & Value Bet Detectors</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-purple-500 w-4 h-4"></i> Multi-leg Parlay Analyzer</li>
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-sky-400"><i data-lucide="cpu"></i><h3 class="font-bold uppercase italic">Casino Core</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Dice Simulator V2 (Interactive)</li>
+                        <li>• Dice/Limbo Progression Calculator</li>
+                        <li>• Monte Carlo Validation Engine</li>
+                        <li>• Dice Strategy Optimizer</li>
+                        <li>• Dice Auto Generator</li>
                     </ul>
                 </div>
+
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-purple-400"><i data-lucide="dna"></i><h3 class="font-bold uppercase italic">Evolution Lab</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Strategy Forge Discovery</li>
+                        <li>• Dice Evolution Engine</li>
+                        <li>• Limbo Evolution Engine</li>
+                        <li>• Keno Evolution Engine</li>
+                        <li>• Mines Evolution Engine</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-emerald-400"><i data-lucide="microscope"></i><h3 class="font-bold uppercase italic">Research Lab</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Strategy Stress Testing</li>
+                        <li>• Bankroll Survival Simulator</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-amber-400"><i data-lucide="pie-chart"></i><h3 class="font-bold uppercase italic">Game Analytics</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Keno Monte Carlo (Multi-Payout)</li>
+                        <li>• Mines Probability Analytics</li>
+                        <li>• Blackjack Strategy Hub</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-red-400"><i data-lucide="trophy"></i><h3 class="font-bold uppercase italic">Sports Lab</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Kelly Bet Calculator</li>
+                        <li>• Parlay Value Analyzer</li>
+                        <li>• Value Bet Edge Checker</li>
+                        <li>• Arbitrage Calculator</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card glass p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-slate-300"><i data-lucide="settings"></i><h3 class="font-bold uppercase italic">Practical Utilities</h3></div>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Compound Growth Pro</li>
+                        <li>• Pattern Sequence Master</li>
+                        <li>• Live Crypto Converter</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Tier Pricing</h2>
-                <p class="text-slate-400">Simple lifetime pricing built around your needs.</p>
-            </div>
-
+    <section id="pricing" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-black mb-12 italic tracking-widest uppercase">Select Your Tier</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="pricing-card glass p-8 rounded-[2rem] flex flex-col">
-                    <div class="bg-sky-500/20 text-sky-400 text-xs font-bold w-fit px-3 py-1 rounded-full mb-4 uppercase">Demo</div>
-                    <div class="text-4xl font-black mb-1">Free</div>
-                    <div class="text-slate-500 text-xs mb-8 uppercase tracking-widest">One-time Lifetime</div>
-                    <p class="text-sm text-slate-300 font-bold mb-6">Preview selected tools before buying.</p>
-                    <ul class="text-xs space-y-4 text-slate-400 flex-grow">
-                        <li class="flex gap-2"><span>•</span> Limited access to calculators and sports tools.</li>
-                        <li class="flex gap-2"><span>•</span> Test interface, flow, and experience.</li>
-                        <li class="flex gap-2"><span>•</span> Built-in demo counters control usage.</li>
-                    </ul>
-                    <a href="YOUR_APK_LINK_HERE" class="mt-8 w-full py-4 rounded-xl border border-sky-500 text-sky-500 font-bold text-center hover:bg-sky-500 hover:text-white transition">START FREE</a>
+                <div class="glass p-8 rounded-3xl border-sky-500/20">
+                    <h4 class="font-bold text-sky-400 mb-2 uppercase">Demo</h4>
+                    <div class="text-3xl font-black mb-6 italic">FREE</div>
+                    <p class="text-xs text-slate-500 mb-8 leading-relaxed">Capped usage of selected calculators and sports tools.</p>
+                    <a href="YOUR_APK_LINK_HERE" class="block w-full py-3 rounded-lg border border-sky-500 text-sky-500 font-bold hover:bg-sky-500 hover:text-white transition uppercase text-xs">Start Demo</a>
                 </div>
-
-                <div class="pricing-card glass p-8 rounded-[2rem] flex flex-col relative border-green-500/30">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-500 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Best Entry</div>
-                    <div class="bg-green-500/20 text-green-400 text-xs font-bold w-fit px-3 py-1 rounded-full mb-4 uppercase">Pro</div>
-                    <div class="text-4xl font-black mb-1">$24.99</div>
-                    <div class="text-slate-500 text-xs mb-8 uppercase tracking-widest">One-time Lifetime</div>
-                    <p class="text-sm text-slate-300 font-bold mb-6">Unlock the practical everyday toolkit.</p>
-                    <ul class="text-xs space-y-4 text-slate-400 flex-grow">
-                        <li class="flex gap-2"><span class="text-green-400">•</span> Core simulators and calculators unlocked.</li>
-                        <li class="flex gap-2"><span class="text-green-400">•</span> Stress testing, mines analytics, and blackjack.</li>
-                        <li class="flex gap-2"><span class="text-green-400">•</span> Full sports tools without demo limits.</li>
-                    </ul>
-                    <button class="mt-8 w-full py-4 rounded-xl bg-green-500 text-black font-bold text-center hover:bg-green-400 transition">BEST ENTRY</button>
+                <div class="glass p-8 rounded-3xl border-green-500/50 scale-105 shadow-2xl shadow-green-500/10">
+                    <h4 class="font-bold text-green-400 mb-2 uppercase">Pro</h4>
+                    <div class="text-3xl font-black mb-6 italic">$24.99</div>
+                    <p class="text-xs text-slate-500 mb-8 leading-relaxed">Core simulators, Mines, Blackjack, and Sports Lab unlocked.</p>
+                    <button class="w-full py-3 rounded-lg bg-green-500 text-black font-bold hover:bg-green-400 transition uppercase text-xs">Get Pro Access</button>
                 </div>
-
-                <div class="pricing-card glass p-8 rounded-[2rem] flex flex-col border-purple-500/30">
-                    <div class="bg-purple-500/20 text-purple-400 text-xs font-bold w-fit px-3 py-1 rounded-full mb-4 uppercase">Pro+</div>
-                    <div class="text-4xl font-black mb-1">$39.99</div>
-                    <div class="text-slate-500 text-xs mb-8 uppercase tracking-widest">One-time Lifetime</div>
-                    <p class="text-sm text-slate-300 font-bold mb-6">Unlock the full Casino Tools Pro system.</p>
-                    <ul class="text-xs space-y-4 text-slate-400 flex-grow">
-                        <li class="flex gap-2"><span class="text-purple-400">•</span> Everything in Pro plus Optimizer.</li>
-                        <li class="flex gap-2"><span class="text-purple-400">•</span> Full Strategy Forge & Evolution Engine access.</li>
-                        <li class="flex gap-2"><span class="text-purple-400">•</span> Lifetime updates and advanced modules.</li>
-                    </ul>
-                    <button class="mt-8 w-full py-4 rounded-xl bg-purple-500 text-white font-bold text-center hover:bg-purple-400 transition">FULL ACCESS</button>
+                <div class="glass p-8 rounded-3xl border-purple-500/20">
+                    <h4 class="font-bold text-purple-400 mb-2 uppercase">Pro+</h4>
+                    <div class="text-3xl font-black mb-6 italic">$39.99</div>
+                    <p class="text-xs text-slate-500 mb-8 leading-relaxed">Full access including Forge and all Evolution Engines.</p>
+                    <button class="w-full py-3 rounded-lg bg-purple-500 text-white font-bold hover:bg-purple-400 transition uppercase text-xs">Full System</button>
                 </div>
-            </div>
-
-            <div class="mt-16 glass p-6 rounded-2xl text-center border-dashed border-white/10">
-                <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">Upgrade Flow</p>
-                <p class="text-sm text-slate-400">Install App &rarr; Copy Device Code &rarr; Send Payment &rarr; Receive Activation Code &rarr; Activate Instantly.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 px-6 border-t border-white/5 bg-black">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
-            <div>
-                <h3 class="text-2xl font-bold mb-4">Business & Promoters</h3>
-                <p class="text-slate-500 mb-8 max-w-md">Interested in partnering or bulk licensing? Reach out directly via our official channels.</p>
-                <div class="flex flex-col gap-4">
-                    <a href="https://wa.me/94771363462" class="flex items-center gap-3 justify-center md:justify-start text-sky-400 hover:underline">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i> +94 77 136 3462
-                    </a>
-                    <a href="mailto:shhirimuthugoda@gmail.com" class="flex items-center gap-3 justify-center md:justify-start text-sky-400 hover:underline">
-                        <i data-lucide="mail" class="w-5 h-5"></i> shhirimuthugoda@gmail.com
-                    </a>
-                </div>
-            </div>
-            <div class="text-slate-600 text-xs">
-                <p class="mb-4">© 2026 Casino Tools Pro. All rights reserved. <br> Private analytical toolkit. Not affiliated with any specific casino platform.</p>
-                <p>Calculations provided are based on mathematical models. Gambling involves risk. Please bet responsibly.</p>
+    <footer class="py-20 px-6 text-center border-t border-white/5">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.3em] mb-8">Official Contact</p>
+            <div class="flex flex-col md:flex-row justify-center gap-10">
+                <a href="https://wa.me/94771363462" class="flex items-center justify-center gap-2 hover:text-sky-400 transition"><i data-lucide="message-square" class="w-4 h-4"></i> +94 77 136 3462</a>
+                <a href="mailto:shhirimuthugoda@gmail.com" class="flex items-center justify-center gap-2 hover:text-sky-400 transition"><i data-lucide="mail" class="w-4 h-4 text-sky-400"></i> shhirimuthugoda@gmail.com</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

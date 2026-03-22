@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Walkthrough | Casino Tools Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #050810; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .feature-img { border-radius: 1.5rem; border: 4px solid #1e293b; width: 100%; max-width: 300px; margin: 0 auto; }
+        .category-tag { font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; padding: 0.25rem 0.75rem; border-radius: 99px; text-transform: uppercase; margin-bottom: 1rem; display: inline-block; }
+    </style>
+</head>
+<body class="pb-20">
+
+    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-white/5">
+        <a href="index.html" class="font-bold tracking-tighter text-xl uppercase">Casino Tools <span class="text-sky-400">Pro</span></a>
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">← Back to Home</a>
+    </nav>
+
+    <header class="pt-32 pb-16 px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter">Technical <span class="text-sky-400">Walkthrough</span></h1>
+        [span_0](start_span)<p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">A complete breakdown of all 20+ modules integrated into the Casino Tools Pro Android environment.[span_0](end_span)</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-24">
+
+        <section>
+            <div class="category-tag bg-sky-500/20 text-sky-400">Library</div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl font-black italic uppercase mb-4">Strategies Library</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">A centralized vault for saving, naming, filtering, and reusing discovered systems. [span_1](start_span)Each entry stores source, risk profile, stake settings, and notes.[span_1](end_span)</p>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/5 text-xs text-slate-300">
+                        [span_2](start_span)[span_3](start_span)<strong class="text-sky-400">Key Feature:</strong> Quick-launch actions to jump straight into simulation or stress testing from any saved entry.[span_2](end_span)[span_3](end_span)
+                    </div>
+                </div>
+                <img src="33542.png" class="feature-img" alt="Strategies Library">
+            </div>
+        </section>
+
+        <section class="space-y-16">
+            <div class="category-tag bg-emerald-500/20 text-emerald-400">Casino Core</div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl font-black italic uppercase mb-4">Dice Simulator V2</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Interactive manual dice simulator with session tracking and performance visualization. [span_4](start_span)Designed for testing over/under strategies with live bankroll feedback.[span_4](end_span)</p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        [span_5](start_span)<li>• Tracks balance, session P/L, and wagered amounts[span_5](end_span)</li>
+                        [span_6](start_span)<li>• Manual and Auto behavior controls[span_6](end_span)</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800 aspect-[9/16] rounded-3xl flex items-center justify-center italic text-slate-600">[Dice Sim Screenshot]</div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
+                <div class="md:order-2">
+                    <h2 class="text-2xl font-black italic uppercase mb-4">Dice/Limbo Calculator</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">A progression sizing calculator for bankroll planning. [span_7](start_span)[span_8](start_span)Translates base bet and multipliers into a step-by-step recovery ladder.[span_7](end_span)[span_8](end_span)</p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        [span_9](start_span)<li>• Calculates max loss depth and loss probability[span_9](end_span)</li>
+                        [span_10](start_span)<li>• Outputs full bet progression tables[span_10](end_span)</li>
+                    </ul>
+                </div>
+                <div class="md:order-1 bg-slate-800 aspect-[9/16] rounded-3xl flex items-center justify-center italic text-slate-600">[Calc Screenshot]</div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 text-sm">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-emerald-400 mb-2 italic">Monte Carlo Simulator</h3>
+                    [span_11](start_span)[span_12](start_span)<p class="text-slate-500 text-xs">Batch simulation engine for validating strategies across thousands of sessions to separate luck from repeatability.[span_11](end_span)[span_12](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-emerald-400 mb-2 italic">Dice Optimizer</h3>
+                    [span_13](start_span)<p class="text-slate-500 text-xs">Sweeps through stake sizes and multipliers to rank the strongest configurations for a specific goal.[span_13](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-emerald-400 mb-2 italic">Dice Auto Generator</h3>
+                    [span_14](start_span)[span_15](start_span)<p class="text-slate-500 text-xs">Generates large batches of random strategies and ranks them by profit/risk profiles.[span_14](end_span)[span_15](end_span)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-16">
+            <div class="category-tag bg-purple-500/20 text-purple-400">Evolution Lab</div>
+            [span_16](start_span)<p class="text-slate-400 text-sm max-w-2xl">Discovery engines that blend population-based search with genetic mutation to uncover durable gambling systems.[span_16](end_span)</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                <div class="glass p-4 rounded-xl border-purple-500/10">
+                    <h4 class="font-bold text-white mb-2">Strategy Forge</h4>
+                    [span_17](start_span)[span_18](start_span)<p class="text-slate-500 leading-relaxed">Controlled discovery engine for fresh structures across multiple games.[span_17](end_span)[span_18](end_span)</p>
+                </div>
+                <div class="glass p-4 rounded-xl border-purple-500/10">
+                    <h4 class="font-bold text-white mb-2">Dice Evolution</h4>
+                    [span_19](start_span)[span_20](start_span)<p class="text-slate-500 leading-relaxed">Mutates and selects top performers across generations for better profit/risk.[span_19](end_span)[span_20](end_span)</p>
+                </div>
+                <div class="glass p-4 rounded-xl border-purple-500/10">
+                    <h4 class="font-bold text-white mb-2">Limbo Evolution</h4>
+                    [span_21](start_span)[span_22](start_span)<p class="text-slate-500 leading-relaxed">Specifically designed for high-multiplier targeting and durability.[span_21](end_span)[span_22](end_span)</p>
+                </div>
+                <div class="glass p-4 rounded-xl border-purple-500/10">
+                    <h4 class="font-bold text-white mb-2">Keno/Mines Evolution</h4>
+                    [span_23](start_span)[span_24](start_span)<p class="text-slate-500 leading-relaxed">Explores tiles, payout profiles, and density to find standout candidates.[span_23](end_span)[span_24](end_span)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="category-tag bg-amber-500/20 text-amber-400">Research & Game Analytics</div>
+                <div class="space-y-8">
+                    <div class="glass p-6 rounded-2xl">
+                        <h3 class="font-black italic text-white uppercase mb-2">Strategy Stress Test</h3>
+                        [span_25](start_span)[span_26](start_span)<p class="text-slate-500 text-xs leading-relaxed">Accepts inputs across multiple game models to focus on downside volatility and distribution.[span_25](end_span)[span_26](end_span)</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h3 class="font-black italic text-white uppercase mb-2">Bankroll Survival Lab</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed">Probability-focused endurance simulator. [span_27](start_span)[span_28](start_span)Reports survival chance and expected ROI.[span_27](end_span)[span_28](end_span)</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h3 class="font-black italic text-white uppercase mb-2">Blackjack Strategy Hub</h3>
+                        [span_29](start_span)[span_30](start_span)<p class="text-slate-500 text-xs leading-relaxed">Compact decision tool for quick on-device reference of basic strategy recommendations.[span_29](end_span)[span_30](end_span)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div class="glass p-6 rounded-2xl border-amber-500/10">
+                    <h3 class="font-black italic text-white uppercase mb-2">Keno Monte Carlo</h3>
+                    [span_31](start_span)<p class="text-slate-500 text-xs leading-relaxed">Multi-outcome model that estimates performance across weighted payout ladders.[span_31](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-amber-500/10">
+                    <h3 class="font-black italic text-white uppercase mb-2">Mines Analytics</h3>
+                    [span_32](start_span)[span_33](start_span)<p class="text-slate-500 text-xs leading-relaxed">Quick success probability and payout multiplier calculator for density decisions.[span_32](end_span)[span_33](end_span)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <div class="category-tag bg-red-500/20 text-red-400">Sports & Utilities</div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="p-6">
+                    <i data-lucide="calculator" class="mx-auto mb-4 text-red-400"></i>
+                    <h4 class="font-bold text-sm mb-2 uppercase">Kelly Calculator</h4>
+                    [span_34](start_span)<p class="text-[0.7rem] text-slate-500">Bankroll sizing for positive-EV betting across full/half/quarter stakes.[span_34](end_span)</p>
+                </div>
+                <div class="p-6">
+                    <i data-lucide="trending-up" class="mx-auto mb-4 text-red-400"></i>
+                    <h4 class="font-bold text-sm mb-2 uppercase">Value/Arb Tools</h4>
+                    [span_35](start_span)[span_36](start_span)<p class="text-[0.7rem] text-slate-500">Detect guaranteed profit opportunities and positive-EV straight bets.[span_35](end_span)[span_36](end_span)</p>
+                </div>
+                <div class="p-6">
+                    <i data-lucide="bar-chart-2" class="mx-auto mb-4 text-slate-400"></i>
+                    <h4 class="font-bold text-sm mb-2 uppercase">Compound Growth</h4>
+                    [span_37](start_span)[span_38](start_span)<p class="text-[0.7rem] text-slate-500">Day-by-day bankroll evolution based on fixed daily rate targets.[span_37](end_span)[span_38](end_span)</p>
+                </div>
+                <div class="p-6">
+                    <i data-lucide="refresh-ccw" class="mx-auto mb-4 text-slate-400"></i>
+                    <h4 class="font-bold text-sm mb-2 uppercase">Crypto Converter</h4>
+                    [span_39](start_span)<p class="text-[0.7rem] text-slate-500">Live on-device crypto-to-fiat translation for spending/staking.[span_39](end_span)</p>
+                </div>
+            </div>
+            
+            <div class="glass p-8 rounded-[2rem] text-center border-red-500/10">
+                <h3 class="text-xl font-black italic uppercase mb-2">Pattern Sequence Master</h3>
+                [span_40](start_span)[span_41](start_span)<p class="text-slate-400 text-sm max-w-xl mx-auto">Generates grouped sequences and structured progression ladders for users who want repeated stake patterns with clear totals.[span_40](end_span)[span_41](end_span)</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 py-10 border-t border-white/5 text-center">
+        <p class="text-[0.6rem] text-slate-600 uppercase tracking-widest italic">Casino Tools Pro • Documentation v2.0</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

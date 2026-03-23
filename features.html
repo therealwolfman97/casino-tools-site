@@ -9,132 +9,201 @@
     <style>
         body { background-color: #050810; color: #f8fafc; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .feature-img { border-radius: 2rem; border: 6px solid #1e293b; width: 100%; max-width: 280px; margin: 0 auto; }
+        .feature-img { border-radius: 2rem; border: 6px solid #1e293b; width: 100%; max-width: 280px; margin: 0 auto; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .category-tag { font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; padding: 0.25rem 0.75rem; border-radius: 99px; text-transform: uppercase; margin-bottom: 1rem; display: inline-block; }
         .module-card { border-left: 4px solid #38bdf8; padding-left: 1.5rem; margin-bottom: 4rem; }
     </style>
 </head>
 <body class="pb-32 leading-relaxed">
 
     <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-white/5">
-        <a href="index.html" class="font-bold tracking-tighter text-xl uppercase">Casino Tools <span class="text-sky-400">Pro</span></a>
-        <a href="index.html" class="text-xs font-bold uppercase text-slate-400 hover:text-white transition">Back to Home</a>
+        <a href="index.html" class="font-bold tracking-tighter text-xl uppercase text-white">Casino Tools <span class="text-sky-400">Pro</span></a>
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition">Back to Home</a>
     </nav>
 
     <header class="pt-40 pb-20 px-6 text-center">
-        <h1 class="text-5xl font-black italic uppercase text-white">Technical <span class="text-sky-400">Inventory</span></h1>
-        <p class="text-slate-400 mt-6 max-w-3xl mx-auto text-sm italic">Modular toolkit combining discovery engines, simulators, and research modules.</p>
+        <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter text-white">Full <span class="text-sky-400">Inventory</span></h1>
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+            [span_0](start_span)A modular toolkit combining discovery engines, simulators, and research tools under one interface.[span_0](end_span)
+        </p>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 space-y-32">
 
-        <section>
+        <section id="library">
+            <div class="category-tag bg-sky-500/20 text-sky-400">Vault</div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card">
-                    <h2 class="text-2xl font-black italic uppercase mb-4">Strategies Library</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">A centralized vault for saving, naming, and filtering discovered systems. Stores metadata including rating, game type, and stake settings.</p>
+                    <h2 class="text-3xl font-black italic uppercase mb-4 text-white">Strategies Library</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">A centralized vault for saving, naming, and filtering discovered systems. [span_1](start_span)[span_2](start_span)Stores metadata including rating, game type, and stake settings.[span_1](end_span)[span_2](end_span)</p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        [span_3](start_span)<li>• Quick-launch actions to Run Sim, Run Calc, or Stress Test.[span_3](end_span)</li>
+                        [span_4](start_span)<li>• Stores generated strategies from all discovery modules.[span_4](end_span)</li>
+                    </ul>
                 </div>
                 <img src="library-vault.png" class="feature-img">
             </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-emerald-400 uppercase tracking-widest font-black italic">Casino Core</h2>
+        <section id="casino-core" class="space-y-24 border-t border-emerald-500/20 pt-24">
+            <div class="category-tag bg-emerald-500/20 text-emerald-400">Casino Core</div>
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-emerald-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Dice Simulator V2</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Interactive manual simulator with session tracking and live bankroll feedback.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Dice Simulator V2</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">Interactive manual simulator with session tracking and live bankroll feedback. [span_5](start_span)[span_6](start_span)Tracks balance, session P/L, and wagered amounts.[span_5](end_span)[span_6](end_span)</p>
                 </div>
                 <img src="dice-sim-v2.png" class="feature-img">
             </div>
+
             <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
                 <div class="md:order-2 module-card border-emerald-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Dice/Limbo Calculator</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Translates base bets and multipliers into step-by-step recovery ladders.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Dice/Limbo Calculator</h2>
+                    [span_7](start_span)[span_8](start_span)<p class="text-slate-300 text-sm leading-relaxed">Translates base bets, multipliers, and win chance into a step-by-step recovery ladder.[span_7](end_span)[span_8](end_span)</p>
                 </div>
                 <img src="dice-limbo-calc.png" class="feature-img md:order-1">
             </div>
+
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-emerald-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2 text-white">Monte Carlo Simulator</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Batch simulation engine validating behavior across thousands of sessions.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Monte Carlo Simulator</h2>
+                    [span_9](start_span)[span_10](start_span)[span_11](start_span)<p class="text-slate-300 text-sm leading-relaxed">Batch simulation engine for validating behavior across thousands of sessions to find statistically repeatable outcomes.[span_9](end_span)[span_10](end_span)[span_11](end_span)</p>
                 </div>
                 <img src="dice-monte-carlo.png" class="feature-img">
             </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-emerald-400 mb-2 uppercase italic text-sm italic">Dice Strategy Optimizer</h3>
+                    [span_12](start_span)<p class="text-slate-400 text-xs">Sweeps through ranges of stake sizes and multipliers to rank the strongest configurations for a goal.[span_12](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-emerald-400 mb-2 uppercase italic text-sm italic">Dice Auto Generator</h3>
+                    [span_13](start_span)[span_14](start_span)<p class="text-slate-400 text-xs">Generates large batches of random strategies and holds the top performers for the library.[span_13](end_span)[span_14](end_span)</p>
+                </div>
+            </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-purple-400 uppercase tracking-widest font-black italic">Evolution Lab</h2>
+        <section id="evolution-lab" class="space-y-24 border-t border-purple-500/20 pt-24">
+            <div class="category-tag bg-purple-500/20 text-purple-400">Evolution Lab</div>
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-purple-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Strategy Forge</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Discovery engine blending population-based search with ranked output.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Strategy Forge</h2>
+                    [span_15](start_span)[span_16](start_span)<p class="text-slate-300 text-sm leading-relaxed">A discovery engine that blends population-based search with ranked output to create new candidate systems.[span_15](end_span)[span_16](end_span)</p>
                 </div>
                 <img src="strategy-forge.png" class="feature-img">
             </div>
+
             <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
                 <div class="md:order-2 module-card border-purple-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Dice Evolution Engine</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Specialized genetic simulator that mutates and selects the best Dice systems.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Dice Evolution Engine</h2>
+                    [span_17](start_span)[span_18](start_span)<p class="text-slate-300 text-sm leading-relaxed">Specialized genetic simulator that mutates and selects the best-performing Dice systems across generations.[span_17](end_span)[span_18](end_span)</p>
                 </div>
                 <img src="dice-evo-engine.png" class="feature-img md:order-1">
             </div>
+
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-purple-400 mb-2 uppercase italic text-xs">Limbo Evolution</h3>
+                    [span_19](start_span)[span_20](start_span)<p class="text-slate-500 text-[10px]">Target-based evolution optimized for high-multiplier targeting and durability.[span_19](end_span)[span_20](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-purple-400 mb-2 uppercase italic text-xs">Keno Evolution</h3>
+                    [span_21](start_span)[span_22](start_span)<p class="text-slate-500 text-[10px]">Explores tiles, target hits, and progression to find standout payout models.[span_21](end_span)[span_22](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-purple-400 mb-2 uppercase italic text-xs">Mines Evolution</h3>
+                    [span_23](start_span)[span_24](start_span)<p class="text-slate-500 text-[10px]">Searches mines count, safe picks, and payout profiles to rank systems.[span_23](end_span)[span_24](end_span)</p>
+                </div>
+            </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-amber-500 uppercase tracking-widest font-black italic">Research Lab</h2>
+        <section id="research-lab" class="space-y-24 border-t border-amber-500/20 pt-24">
+            <div class="category-tag bg-amber-500/20 text-amber-400">Research Lab</div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-amber-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Strategy Stress Test</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Controlled stability check focusing on downside volatility and dispersion.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Strategy Stress Test</h2>
+                    [span_25](start_span)[span_26](start_span)<p class="text-slate-300 text-sm leading-relaxed">Accepts inputs across multiple game models to focus on downside, volatility, and distribution.[span_25](end_span)[span_26](end_span)</p>
                 </div>
                 <img src="stress-test-lab.png" class="feature-img">
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
                 <div class="md:order-2 module-card border-amber-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Bankroll Survival Lab</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Probability-focused endurance simulator. Reports survival chance and ROI.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Bankroll Survival Lab</h2>
+                    [span_27](start_span)[span_28](start_span)<p class="text-slate-300 text-sm leading-relaxed">Probability-focused endurance simulator reporting survival chance, bust chance, and expected ROI.[span_27](end_span)[span_28](end_span)</p>
                 </div>
                 <img src="survival-lab.png" class="feature-img md:order-1">
             </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-slate-400 uppercase tracking-widest font-black italic">Game Analytics</h2>
+        <section id="game-analytics" class="space-y-24 border-t border-slate-500/20 pt-24">
+            <div class="category-tag bg-slate-500/20 text-slate-400">Game Analytics</div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-slate-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Keno Monte Carlo</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Estimates performance across weighted payout ladders (small to jackpot).</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Keno Monte Carlo</h2>
+                    [span_29](start_span)[span_30](start_span)<p class="text-slate-300 text-sm leading-relaxed">Estimates performance across weighted payout ladders (small, medium, big, and jackpot).[span_29](end_span)[span_30](end_span)</p>
                 </div>
                 <img src="keno-monte-carlo.png" class="feature-img">
             </div>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-white mb-2 uppercase italic">Mines Analytics</h3>
+                    [span_31](start_span)[span_32](start_span)<p class="text-slate-500 text-xs">Immediate probability and multiplier reads for Mines decisions.[span_31](end_span)[span_32](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-white mb-2 uppercase italic">Blackjack Strategy Hub</h3>
+                    [span_33](start_span)[span_34](start_span)<p class="text-slate-500 text-xs">Fast on-device reference for basic-strategy action recommendations.[span_33](end_span)[span_34](end_span)</p>
+                </div>
+            </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-red-500 uppercase tracking-widest font-black italic">Sports Lab</h2>
+        <section id="sports-lab" class="space-y-24 border-t border-red-500/20 pt-24">
+            <div class="category-tag bg-red-500/20 text-red-400">Sports Lab</div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-red-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Kelly Calculator</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Sizing for positive-EV betting across full/half/quarter staking.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Kelly Bet Calculator</h2>
+                    [span_35](start_span)[span_36](start_span)[span_37](start_span)<p class="text-slate-300 text-sm leading-relaxed">Bankroll sizing for positive-EV betting across full, half, and quarter Kelly stakes.[span_35](end_span)[span_36](end_span)[span_37](end_span)</p>
                 </div>
                 <img src="kelly-calc.png" class="feature-img">
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
                 <div class="md:order-2 module-card border-red-500">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Arbitrage Calculator</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Stake sizing for locked profit on 2-way Arb opportunities.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Arbitrage Calculator</h2>
+                    [span_38](start_span)[span_39](start_span)<p class="text-slate-300 text-sm leading-relaxed">Checks two-way odds to calculate exact stakes for locking in risk-free margins.[span_38](end_span)[span_39](end_span)</p>
                 </div>
                 <img src="arbitrage-calc.png" class="feature-img md:order-1">
             </div>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-red-400 mb-2 uppercase italic">Parlay Analyzer</h3>
+                    [span_40](start_span)[span_41](start_span)[span_42](start_span)<p class="text-slate-500 text-xs">Quantifies whether multi-leg tickets offer positive expected value (EV).[span_40](end_span)[span_41](end_span)[span_42](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-red-400 mb-2 uppercase italic">Value Bet Calculator</h3>
+                    [span_43](start_span)[span_44](start_span)[span_45](start_span)<p class="text-slate-500 text-xs">Compares bookmaker odds to true probabilities to identify positive-EV bets.[span_43](end_span)[span_44](end_span)[span_45](end_span)</p>
+                </div>
+            </div>
         </section>
 
-        <section class="space-y-24">
-            <h2 class="text-slate-600 uppercase tracking-widest font-black italic">Utilities</h2>
+        <section id="utilities" class="space-y-24 border-t border-slate-700/50 pt-24">
+            <div class="category-tag bg-slate-700/50 text-slate-500">Utilities</div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="module-card border-slate-700">
-                    <h2 class="text-xl font-black italic uppercase mb-2">Pattern Sequence Master</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed">Generates grouped sequences and progression ladders.</p>
+                    <h2 class="text-2xl font-black italic uppercase mb-4 text-white italic">Pattern Sequence Master</h2>
+                    [span_46](start_span)[span_47](start_span)[span_48](start_span)<p class="text-slate-300 text-sm leading-relaxed">Generates grouped sequences and progression ladders for disciplined stake patterns.[span_46](end_span)[span_47](end_span)[span_48](end_span)</p>
                 </div>
                 <img src="pattern-sequence-master.png" class="feature-img">
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-slate-400 mb-2 uppercase italic">Compound Growth Pro</h3>
+                    [span_49](start_span)[span_50](start_span)[span_51](start_span)<p class="text-slate-500 text-xs">Day-by-day bankroll planning based on fixed target daily rates.[span_49](end_span)[span_50](end_span)[span_51](end_span)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-bold text-slate-400 mb-2 uppercase italic">Live Crypto Converter</h3>
+                    [span_52](start_span)[span_53](start_span)<p class="text-slate-500 text-xs">On-device crypto-to-fiat conversion for rapid bankroll translation.[span_52](end_span)[span_53](end_span)</p>
+                </div>
             </div>
         </section>
 
